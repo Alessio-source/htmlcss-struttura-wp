@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nier';
+}
+
+body {
+  width: 70%;
+  margin: auto;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  margin-top: 25px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+header > #background {
+  position: relative;
+  height: 512px;
+  background-image: url("https://via.placeholder.com/1920x512.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+header > #background > #logo-and-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+nav > #menu {
+  list-style: none;
+}
+
+nav > #menu > .menuitem {
+  display: inline-block;
+  padding: 15px 0;
+  font-size: 0px; /* per rimuovere gli spazzi dell'inline block */
+}
+
+nav > #menu > .menuitem > a {
+  padding: 15px 5px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+main {
+  margin: 10px 0;
+}
+
+main > #aside-left {
+  float: left;
+  width: 18%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+main > #aside-left > p {
+  margin: 10px;
+}
+
+main > section {
+  float: left;
+  width: 60%;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 2%;
+}
+
+main > section > p {
+  margin: 10px;
+}
+
+main > #aside-right {
+  float: left;
+  width: 18%;
+}
+
+main > #aside-right > .widgets {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+main > #aside-right > .widgets:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: white;
+  border-radius: 5px;
+}
+
+footer > .top {
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+footer > .bottom > .socials {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+footer > .bottom > .socials:first-child {
+  margin-right: 0.5%;
+}
+
+footer > .bottom > .socials:last-child {
+  margin-left: 0.5%;
+}
+
+footer > .bottom > .socials > .fab {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@font-face {
+  font-family: 'Nier';
+  src: url('font/nierfont.ttf')  format('truetype');
+}
