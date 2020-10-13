@@ -46,17 +46,17 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 
-nav > #menu {
+nav > #menu-nav {
   list-style: none;
 }
 
-nav > #menu > .menuitem {
+nav > #menu-nav > .menuitem {
   display: inline-block;
   padding: 15px 0;
   font-size: 0px; /* per rimuovere gli spazzi dell'inline block */
 }
 
-nav > #menu > .menuitem > a {
+nav > #menu-nav > .menuitem > a {
   padding: 15px 5px;
   text-decoration: none;
   color: white;
@@ -75,8 +75,22 @@ main > #aside-left {
   border-radius: 5px;
 }
 
-main > #aside-left > p {
-  margin: 10px;
+main > #aside-left > #menu-aside-left {
+  list-style: none;
+  margin: 5px 10px;
+}
+
+main > #aside-left > #menu-aside-left > .menuitem {
+  margin: 10px 0;
+}
+
+main > #aside-left > #menu-aside-left > .menuitem > h2 > i {
+  color: orange;
+}
+
+main > #aside-left > #menu-aside-left > .menuitem > a{
+  text-decoration: none;
+  color: green;
 }
 
 main > section {
